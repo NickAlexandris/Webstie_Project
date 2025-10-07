@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- mobile metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!-- site metas -->
+<title>Metabank</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">	
+<!-- bootstrap css -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<!-- style css -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- Responsive-->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- fevicon -->
+<link rel="icon" href="images/fevicon.png" type="image/gif" />
+<!-- Scrollbar Custom CSS -->
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+<!-- Tweaks for older IEs-->
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<!-- owl stylesheets --> 
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+    
+    label {
+      padding: 12px 12px 12px 0;
+      display: inline-block;
+    }
+    
+    input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: right;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    
+    .col-25 {
+      float: left;
+      width: 25%;
+      margin-top: 6px;
+    }
+    
+    .col-75 {
+      float: left;
+      width: 75%;
+      margin-top: 6px;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      }
+    }
+    </style>
+</head>
+
+<body>
+ 
+  <div>
+  <figure><a href="index.html"><img src="images/cards.png"style="max-width: 50%;"/></a></figure>
+  <div class="row">
+    <div class="col">
+  <form action="add_category.php" method="POST">
+    <div class="container">
+      <h1>Επέλεξε κάρτα</h1>
+      <p>Η Metabank card σε περιμένει επέλξε την κάρτα που σου τερίαζει .</p>
+      <hr>
+
+      <h2>Κερδίστε έως και £ 1000 όταν η αγορά σας καταστραφεί ή κλαπεί κατά λάθος, για ένα ολόκληρο έτος
+
+        Καλύπτετε έως και 1000 £ με ασφάλιση για ένα ολόκληρο έτος από τη στιγμή της αγοράς
+        Μην πανικοβληθείτε εάν ένα πορτοφολάκι σπάσει το τηλέφωνό σας στις διακοπές, απλώς αξιώστε το μέσω της Metabank
+        Η ραγισμένη οθόνη σε έκανε να ουρλιάζεις; Θα λάβετε επιστροφή χρημάτων με την κάλυψη προστασίας από ατυχήματα<br>Μηνιαίο κόστος 3.00£ </h2>   
+        <h2>Παγκόσμια ταξιδιωτική ασφάλιση που λειτουργεί πραγματικά
+
+          Παγκόσμια ιατρική και οδοντιατρική θεραπεία έκτακτης ανάγκης.
+          Αποζημίωση για καθυστερημένες πτήσεις και αποσκευές, που καταβάλλονται απευθείας στον λογαριασμό σας στην Metabank.
+          Η ταξιδιωτική μας ασφάλιση προσφέρεται από την Metabank.<br>Μηνιαίο κόστος 6.00£ </h2>    
+          <h2>Τα χρήματά σας προστατεύονται
+
+            Κρατάμε όλα τα κεφάλαια πελατών σε περιφραγμένους λογαριασμούς σε μια μεγάλη παγκόσμια τράπεζα. Αυτό ουσιαστικά σημαίνει ότι εμείς, ούτε η συνεργαζόμενη τράπεζά μας, δεν δανείζουμε ποτέ ούτε επενδύουμε τα χρήματά σας.<br>Μηνιαίο κόστος 0£ </h2>
+         
+          <div class="form-group">
+          <label>Oνοματεπώνυμο</label>
+          <input type="text" name="category_name" class="form-control"/>
+        </div>
+
+          <div class="form-group">
+            <label>Είδος κάρτας</label>
+            <select class="form-control" name="category_purpose">
+            <option value="1">Bussines</option>
+            <option value="2">V.I.P</option>
+            <option value="3">Standard</option>
+          </select>
+          </div>
+          
+          <div class="form-group">
+            <input type="submit" name="insert-btn" value ="Add Category" class=" btn-success"/>
+        </div>
+    </div>
+    
+    </div>
+         
+</select>
+
+      
+</form> 
+    
+
+       
+            
+       
+    
+	
+
+  </body>
+</html>
